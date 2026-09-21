@@ -177,6 +177,7 @@ p {
   flex-wrap: wrap;
   gap: 14px;
   margin-top: 20px;
+  
 }
 
 .service-grid {
@@ -231,12 +232,24 @@ p {
   background: linear-gradient(135deg, var(--primary), var(--secondary));
   color: #08111d;
   box-shadow: var(--shadow);
+  cursor: pointer;
+  /* Smooth transition for both the scale and the shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.button.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px 30px rgba(17, 42, 101, 0.4);
 }
 
 .button.secondary {
   border-color: rgba(148, 163, 184, 0.35);
   background: rgba(15, 23, 42, 0.4);
   color: var(--text);
+}
+.button.secondary:hover {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+   transform: translateY(-2px);
+  box-shadow: 0 0 10px 15px rgba(17, 42, 101, 0.4)
 }
 
 .button:hover {
