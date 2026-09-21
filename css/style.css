@@ -38,6 +38,7 @@ a {
 img {
   max-width: 100%;
   display: block;
+  
 }
 
 .container {
@@ -279,6 +280,17 @@ p {
   place-items: center;
   font-size: clamp(3rem, 7vw, 6rem);
   margin-bottom: 20px;
+}
+.profile-card .avatar .zoom-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Smooth transition handling scale changes */
+  transition: transform 0.5s ease-in-out;
+}
+.profile-card .avatar:hover .zoom-image {
+  transform: scale(1.1);
+  border-radius: 22px;
 }
 
 .profile-meta {
