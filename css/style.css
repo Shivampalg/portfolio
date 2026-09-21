@@ -268,6 +268,7 @@ p {
   border-radius: 24px;
   padding: 24px;
   box-shadow: var(--shadow);
+
 }
 
 .profile-card .avatar {
@@ -287,6 +288,7 @@ p {
   object-fit: cover;
   /* Smooth transition handling scale changes */
   transition: transform 0.5s ease-in-out;
+  border-radius: 24px;
 }
 .profile-card .avatar:hover .zoom-image {
   transform: scale(1.1);
